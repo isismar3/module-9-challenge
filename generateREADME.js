@@ -1,26 +1,29 @@
-
+function generateReadMe(data) {
+    return `
     # title
-    # module 9 challenge project
+    # ${data.title}
 
     ## description: write a description of the the project you are working on:
-    i am conducting a readMe page for all future projects
+    ${data.description}
 
      ### Table of contents: installation, usage, license and credits
-     npm install inquirer
-     javascript
-     MIT
-     undefined
+     ${data.installation}
+     ${data.usage}
+     ${data.license}
+     ${data.credits}
 
     ## Email: Please type your email
-    isis.mar@yahoo.com
+    ${data.email}
 
     ## Github: Please insert your username for Github
-    isismar3
+    ${data.github}
 
 
     ### Contribute: show how others can contribute to your repo:
-    js
+    ${data.contributing}
 
     ### show how you can run tests:
-    npm run test
-    
+    ${data.test}
+    `}
+
+module.exports = generateReadMe;
